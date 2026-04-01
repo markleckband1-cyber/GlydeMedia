@@ -1,0 +1,114 @@
+/* ============================================================
+   GLYDE MEDIA — footer.css
+   ============================================================ */
+
+.footer {
+  background: #141d3e;
+  font-family: var(--sans);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  gap: 48px;
+  padding: 64px 60px 48px;
+}
+
+.footer-logo-img {
+  height: 120px;
+  width: auto;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer-tagline {
+  font-size: 13px; font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.7;
+  max-width: 260px;
+  margin-bottom: 20px;
+}
+
+.footer-contact-row {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 10px;
+}
+.footer-contact-row svg {
+  width: 13px; height: 13px;
+  stroke: var(--teal); flex-shrink: 0;
+}
+
+.footer-email,
+.footer-phone {
+  font-size: 13px; font-weight: 600;
+  color: var(--teal); text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+.footer-email:hover,
+.footer-phone:hover { color: var(--white); }
+
+.footer-col-title {
+  font-family: var(--cond);
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex; flex-direction: column; gap: 12px;
+}
+
+.footer-link {
+  font-size: 13px; font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+  letter-spacing: 0.02em;
+}
+.footer-link:hover { color: var(--white); }
+
+.footer-locations {
+  display: flex; flex-direction: column; gap: 10px;
+}
+
+.footer-loc-item {
+  display: flex; align-items: center; gap: 8px;
+}
+.footer-loc-item svg {
+  width: 12px; height: 12px;
+  stroke: var(--teal); flex-shrink: 0;
+}
+.footer-loc-item span {
+  font-size: 12px; font-weight: 300;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.04em;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 20px 60px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+
+.footer-copy {
+  font-size: 11px; color: rgba(255, 255, 255, 0.2);
+  letter-spacing: 0.06em;
+}
+.footer-copy span { color: rgba(61, 189, 160, 0.4); }
+
+.footer-worldwide {
+  font-size: 11px; color: rgba(255, 255, 255, 0.2);
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+
+@media (max-width: 860px) {
+  .footer-main { grid-template-columns: 1fr 1fr; padding: 48px 32px 36px; }
+  .footer-bottom { padding: 20px 32px; flex-direction: column; gap: 8px; text-align: center; }
+}
+
+@media (max-width: 560px) {
+  .footer-main { grid-template-columns: 1fr; }
+}
