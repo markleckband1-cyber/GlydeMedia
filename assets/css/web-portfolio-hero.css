@@ -1,3 +1,36 @@
+
+/* Text shield — protects text from lines */
+.text-shield {
+  position: relative;
+}
+.text-shield::before {
+  content: '';
+  position: absolute;
+  inset: -16px -24px -16px -16px;
+  background: linear-gradient(90deg, rgba(13,27,42,0.75) 55%, transparent 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+/* Right panel */
+.hero-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+}
+
+.hero-right-panel {
+  position: relative;
+  flex: 1;
+  height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 /* ============================================================
    GLYDE MEDIA — web-portfolio-hero.css
    Styles for the Web Portfolio section intro hero only.
@@ -83,7 +116,7 @@
   width: 240px; height: 240px;
   flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
-  margin-top: -16px; margin-left: auto; margin-right: 160px;
+  margin-top: -16px; margin-left: 0; margin-right: 40px;
 }
 .logo-glow-ring {
   position: absolute; inset: -16%;
@@ -129,9 +162,37 @@
 
 @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
 
+
+
+
+
+/* Slanted lines + canvas */
+.lines-canvas {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; z-index: 1;
+  pointer-events: none;
+}
+.bg-canvas {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; z-index: 2;
+}
+
 @media (max-width: 900px) {
   .hero-graphic   { height: auto; min-height: 460px; }
   .hero-left      { padding: 60px 32px 48px; }
   .hero-title-row { gap: 20px; }
   .logo-spin-wrap { width: 160px; height: 160px; margin-right: 20px; }
 }
+
+.orbit-ring-3 {
+  position: absolute; width: 168%; height: 168%;
+  border-radius: 50%; border: 1px solid rgba(61,189,160,0.07);
+  animation: orbitSpin3 35s linear infinite;
+}
+.orbit-ring-3::before {
+  content: ''; position: absolute;
+  top: 50%; right: -4px; transform: translateY(-50%);
+  width: 5px; height: 5px; border-radius: 50%;
+  background: rgba(61,189,160,0.6); box-shadow: 0 0 8px rgba(61,189,160,0.6);
+}
+@keyframes orbitSpin3 { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }

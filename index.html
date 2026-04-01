@@ -379,22 +379,27 @@
 
   <!-- Web Portfolio Hero -->
   <div class="hero-graphic" id="web">
+    <canvas class="lines-canvas" id="lc"></canvas>
+    <canvas class="bg-canvas" id="bgc"></canvas>
     <div class="hero-left">
       <p class="hero-eyebrow">Selected Work</p>
       <div class="hero-title-row">
-        <div>
+        <div class="text-shield">
           <h2 class="hero-title">
             <span class="solid">WEB</span>
             <span class="stroke">DESIGN</span>
           </h2>
           <div class="hero-divider"></div>
-          <p class="hero-sub">Clean, dynamic websites<br>for researchers, startups &amp; businesses.</p>
+          <p class="hero-sub">Clean, dynamic websites for businesses, non-profits, researchers and startups.</p>
         </div>
-        <div class="logo-spin-wrap">
-          <div class="logo-glow-ring"></div>
-          <div class="orbit-ring-1"></div>
-          <div class="orbit-ring-2"></div>
-          <img class="logo-img" src="assets/img/iconpng.png" alt="Glyde Media">
+        <div class="hero-right-panel">
+          <div class="logo-spin-wrap">
+            <div class="logo-glow-ring"></div>
+            <div class="orbit-ring-1"></div>
+            <div class="orbit-ring-2"></div>
+            <div class="orbit-ring-3"></div>
+            <img class="logo-img" src="assets/img/logo-icon-transparent.png" alt="Glyde Media">
+          </div>
         </div>
       </div>
     </div>
@@ -730,6 +735,76 @@
     </div>
   </footer>
 
+
+  <script>
+  (function(){
+    var lc=document.getElementById('lc');
+    if(!lc) return;
+    var lt=lc.getContext('2d');
+    function resizeL(){lc.width=lc.offsetWidth;lc.height=lc.offsetHeight;drawLines();}
+    function drawLines(){
+      var w=lc.width,h=lc.height;
+      lt.clearRect(0,0,w,h);
+      var angle=38,rad=angle*Math.PI/180;
+      var spacing=26;
+      var count=Math.ceil(w/spacing)+20;
+      for(var i=0;i<count;i++){
+        var startX=-200+i*spacing,startY=0;
+        var endX=startX+Math.cos(rad)*h*2.5,endY=startY+Math.sin(rad)*h*2.5;
+        var grad=lt.createLinearGradient(startX,startY,endX,endY);
+        var t=i/count;
+        var midX=(startX+endX)/2;
+        var op=Math.min(1,Math.max(0,midX/(w*0.38)));
+        if(t<0.5){
+          grad.addColorStop(0,'rgba(61,189,160,'+(0.05*op)+')');
+          grad.addColorStop(0.3,'rgba(61,189,160,'+((0.5-t*0.2)*op)+')');
+          grad.addColorStop(0.7,'rgba(29,158,117,'+((0.32-t*0.1)*op)+')');
+          grad.addColorStop(1,'rgba(13,27,42,0)');
+        } else {
+          grad.addColorStop(0,'rgba(120,188,65,'+(0.04*op)+')');
+          grad.addColorStop(0.3,'rgba(120,188,65,'+((0.44-t*0.18)*op)+')');
+          grad.addColorStop(0.7,'rgba(61,189,160,'+((0.28-t*0.08)*op)+')');
+          grad.addColorStop(1,'rgba(13,27,42,0)');
+        }
+        lt.beginPath();lt.moveTo(startX,startY);lt.lineTo(endX,endY);
+        lt.strokeStyle=grad;lt.lineWidth=i%4===0?2:1;lt.stroke();
+      }
+    }
+    resizeL();
+    window.addEventListener('resize',resizeL);
+
+    var cv=document.getElementById('bgc');
+    var ct=cv.getContext('2d');
+    var T='rgba(61,189,160,';
+    var G='rgba(120,188,65,';
+    function resize(){cv.width=cv.offsetWidth;cv.height=cv.offsetHeight;}
+    resize();
+    window.addEventListener('resize',resize);
+    var tick=0;
+    function draw(){
+      var w=cv.width,h=cv.height;
+      ct.clearRect(0,0,w,h);
+      tick+=0.01;
+      var cx=w/2,cy=h/2;
+      for(var i=0;i<5;i++){
+        var speed=0.2+i*0.06;
+        var phase=(tick*speed+i*1.2)%(Math.PI*2);
+        var progress=phase/(Math.PI*2);
+        var r=40+progress*Math.max(w,h)*0.7;
+        var alpha=0.06*(1-progress)*(1-progress);
+        var col=i%2===0?G:T;
+        ct.beginPath();ct.arc(cx,cy,r,0,Math.PI*2);
+        ct.strokeStyle=col+alpha+')';ct.lineWidth=0.8;ct.stroke();
+      }
+      var sy=((Math.sin(tick*0.35)+1)/2)*h;
+      var sg=ct.createLinearGradient(0,sy-40,0,sy+40);
+      sg.addColorStop(0,'transparent');sg.addColorStop(.5,T+'0.04)');sg.addColorStop(1,'transparent');
+      ct.fillStyle=sg;ct.fillRect(0,sy-40,w,80);
+      requestAnimationFrame(draw);
+    }
+    draw();
+  })();
+  </script>
   <!-- Scripts — one file per section, load at the bottom -->
   <script>
   (function(){
