@@ -20,12 +20,18 @@
 }
 
 .about-glyde::after {
-  content: 'GLYDE';
+  content: '';
   position: absolute; left: 50%; top: 50%;
   transform: translate(-50%, -50%);
-  font-family: var(--cond); font-size: 340px; font-weight: 900;
-  color: rgba(255,255,255,0.018); letter-spacing: -0.04em;
-  pointer-events: none; line-height: 1; user-select: none; white-space: nowrap;
+  margin-left: 0; margin-top: 0;
+  width: 680px; height: 680px;
+  background-image: url("../img/logo-icon-centered.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.035;
+  filter: brightness(2) saturate(0);
+  pointer-events: none; user-select: none; z-index: 0;
 }
 
 .about-inner {
