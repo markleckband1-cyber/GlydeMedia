@@ -19,12 +19,15 @@
 }
 
 .about-mark::after {
-  content: 'MARK';
-  position: absolute; right: -40px; top: 50%; transform: translateY(-50%);
-  font-family: var(--cond); font-size: 320px; font-weight: 900;
-  color: rgba(255,255,255,0.018); letter-spacing: -0.04em;
-  pointer-events: none; line-height: 1; user-select: none;
-  white-space: nowrap; z-index: 0;
+  content: '';
+  position: absolute; right: -60px; top: 50%; transform: translateY(-50%);
+  width: 560px; height: 560px;
+  background-image: url("../img/logo-icon.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.06;
+  filter: grayscale(100%) brightness(2);
+  pointer-events: none; user-select: none; z-index: 0;
 }
 
 .mark-inner {
