@@ -1,0 +1,103 @@
+/* ============================================================
+   GLYDE MEDIA — video-portfolio.css
+   Styles for the Video Portfolio grid section
+   ============================================================ */
+
+.vid-portfolio { background: var(--navy); }
+
+.vid-header { padding: 80px 80px 48px; background: var(--white); }
+
+.vid-eyebrow {
+  font-family: var(--cond); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--teal); margin-bottom: 12px;
+  display: flex; align-items: center; gap: 14px;
+}
+.vid-eyebrow::before { content: ''; width: 28px; height: 2px; background: var(--teal); }
+
+.vid-headline {
+  font-family: var(--cond);
+  font-size: clamp(40px, 5vw, 72px);
+  font-weight: 900; text-transform: uppercase;
+  letter-spacing: -0.02em; line-height: 0.9;
+}
+.vid-headline .solid { color: var(--navy); }
+.vid-headline .stroke { -webkit-text-stroke: 2px var(--teal); color: transparent; }
+
+/* Grid */
+.vid-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 310px 310px;
+  gap: 3px;
+}
+
+.vid-item {
+  position: relative; overflow: hidden;
+  cursor: pointer; background: #000;
+  display: block; text-decoration: none;
+}
+.vid-item img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
+  filter: grayscale(100%);
+}
+.vid-item:hover img { transform: scale(1.04); }
+
+/* Teal overlay */
+.vid-overlay {
+  position: absolute; inset: 0;
+  background: rgba(61,189,160,0.82);
+  opacity: 0; transition: opacity 0.35s ease;
+  display: flex; flex-direction: column;
+  align-items: flex-start; justify-content: flex-end;
+  padding: 32px;
+}
+.vid-item:hover .vid-overlay { opacity: 1; }
+
+/* Play button */
+.vid-play {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%,-50%) scale(0.8);
+  width: 56px; height: 56px; border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.9);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.vid-play svg { width: 20px; height: 20px; fill: white; transform: translateX(2px); }
+.vid-item:hover .vid-play { opacity: 1; transform: translate(-50%,-50%) scale(1); }
+
+.vid-title {
+  font-family: var(--cond);
+  font-size: clamp(16px, 1.6vw, 22px);
+  font-weight: 900; text-transform: uppercase;
+  letter-spacing: 0.04em; line-height: 1.1;
+  color: var(--white); margin-bottom: 6px;
+}
+.vid-desc {
+  font-family: var(--sans); font-size: 12px; font-weight: 300;
+  color: rgba(255,255,255,0.85); line-height: 1.5;
+}
+.vid-desc em {
+  display: block; color: rgba(255,255,255,0.65);
+  font-style: normal; font-size: 11px; margin-top: 4px;
+}
+
+/* Grid placement */
+.item-luft   { grid-column: 1;   grid-row: 1; }
+.item-smith  { grid-column: 2;   grid-row: 1; }
+.item-brit   { grid-column: 3/5; grid-row: 1; }   /* top right wide */
+.item-brian  { grid-column: 1/3; grid-row: 2; }   /* bottom left wide */
+.item-crystal{ grid-column: 3;   grid-row: 2; }
+.item-embryn { grid-column: 4;   grid-row: 2; }
+
+@media (max-width: 900px) {
+  .vid-header { padding: 60px 32px 36px; }
+  .vid-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 220px 220px 220px; }
+  .item-brit   { grid-column: 1/3; grid-row: auto; }
+  .item-brian  { grid-column: 1/3; grid-row: auto; }
+  .item-crystal{ grid-column: 1;   grid-row: auto; }
+  .item-embryn { grid-column: 2;   grid-row: auto; }
+}

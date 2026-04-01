@@ -1,0 +1,118 @@
+/* ============================================================
+   GLYDE MEDIA — services.css
+   Styles for the Services section
+   ============================================================ */
+
+.services {
+  position: relative;
+  padding: 120px 80px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.services::before {
+  content: ''; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(20,29,62,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20,29,62,0.04) 1px, transparent 1px);
+  background-size: 64px 64px; pointer-events: none;
+}
+
+.services-inner {
+  position: relative; z-index: 2;
+  max-width: 1200px; margin: 0 auto;
+}
+
+.services-header {
+  text-align: center; margin-bottom: 80px;
+  display: flex; flex-direction: column; align-items: center;
+}
+.services-eyebrow {
+  font-family: var(--cond); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--teal); margin-bottom: 16px;
+  display: flex; align-items: center; gap: 14px;
+}
+.services-eyebrow::before,
+.services-eyebrow::after { content: ''; width: 28px; height: 2px; background: var(--teal); }
+
+.services-headline {
+  font-family: var(--cond);
+  font-size: clamp(48px, 5vw, 80px);
+  font-weight: 900; text-transform: uppercase;
+  letter-spacing: -0.02em; line-height: 0.9;
+  color: #141D3E; text-align: center;
+}
+.services-headline .solid { display: block; color: #141D3E; }
+.services-headline .stroke {
+  display: block;
+  -webkit-text-stroke: 2px var(--teal);
+  color: transparent; font-style: italic;
+}
+
+/* 3x2 grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.service-card {
+  position: relative;
+  padding: 48px 40px;
+  background: rgba(61,189,160,0.14);
+  border: 1px solid rgba(61,189,160,0.25);
+  overflow: hidden;
+  transition: background 0.3s, border-color 0.3s;
+  cursor: default;
+}
+.service-card:nth-child(even) {
+  background: rgba(120,188,65,0.12);
+  border: 1px solid rgba(120,188,65,0.28);
+}
+.service-card::before {
+  content: ''; position: absolute; top: 0; left: 0;
+  width: 0; height: 3px;
+  background: linear-gradient(90deg, var(--teal), #78BC41);
+  transition: width 0.4s cubic-bezier(0.76,0,0.24,1);
+}
+.service-card:hover { background: rgba(120,188,65,0.2); border-color: rgba(120,188,65,0.4); }
+.service-card:nth-child(even):hover { background: rgba(61,189,160,0.2); border-color: rgba(61,189,160,0.4); }
+.service-card:hover::before { width: 100%; }
+
+.service-num {
+  font-family: var(--cond); font-size: 80px; font-weight: 900;
+  color: rgba(20,29,62,0.06); line-height: 1;
+  position: absolute; top: 20px; right: 24px;
+  user-select: none; transition: color 0.3s;
+}
+.service-card:hover .service-num { color: rgba(120,188,65,0.15); }
+
+.service-icon {
+  width: 40px; height: 40px; margin-bottom: 24px;
+  color: var(--teal); opacity: 0.8;
+}
+.service-icon svg { width: 100%; height: 100%; }
+
+.service-name {
+  font-family: var(--cond); font-size: 14px; font-weight: 800;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: #141D3E; margin-bottom: 16px;
+  display: flex; align-items: center; gap: 10px;
+}
+.service-name::before { content: ''; width: 16px; height: 2px; background: var(--teal); flex-shrink: 0; }
+
+.service-desc {
+  font-family: var(--sans); font-size: 14px; font-weight: 300;
+  line-height: 1.8; color: rgba(20,29,62,0.72);
+}
+.service-card:hover .service-desc { color: rgba(20,29,62,0.85); }
+.service-card:hover .service-name { color: #141D3E; }
+
+@media (max-width: 900px) {
+  .services { padding: 80px 32px; }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .services-grid { grid-template-columns: 1fr; }
+}

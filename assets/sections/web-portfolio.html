@@ -1,0 +1,156 @@
+<!-- ============================================================
+     SECTION: portfolio.html
+     Contains: meta bar + Maurer Lab card + DynaPore card
+     CSS:      assets/css/portfolio.css
+     JS:       assets/js/portfolio.js
+     Status:   ✅ Built
+============================================================ -->
+
+<!-- Meta bar -->
+<div class="section-meta">
+  <span class="meta-left">Glyde Media — Portfolio</span>
+  <span class="meta-right">02 Projects</span>
+</div>
+
+<!-- Projects -->
+<div class="projects">
+
+  <!-- 01 Maurer Lab -->
+  <div class="project">
+    <div class="project-num">01</div>
+    <div class="slider-col">
+      <div class="slider-viewport">
+        <div class="slider-track" id="mt">
+          <div class="slide">
+            <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fmaurerlab.org?w=800&h=500" alt="Maurer Lab hero">
+            <div class="slide-label">Homepage Hero</div>
+          </div>
+          <div class="slide">
+            <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fmaurerlab.org%2F%23lab?w=800&h=500" alt="Maurer Lab lab space">
+            <div class="slide-label">Lab Space Section</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-ui">
+        <button class="s-btn" onclick="go('m',-1)">
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8,1 3,6 8,11"/></svg>
+        </button>
+        <div class="s-dots" id="md">
+          <div class="s-dot active" onclick="gt('m',0)"></div>
+          <div class="s-dot"        onclick="gt('m',1)"></div>
+        </div>
+        <button class="s-btn" onclick="go('m',1)">
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4,1 9,6 4,11"/></svg>
+        </button>
+        <div class="s-count"><em id="mc">1</em>/2</div>
+      </div>
+    </div>
+    <div class="content-col">
+      <p class="proj-tag">Academic Research</p>
+      <h3 class="proj-title">Maurer<br>Lab</h3>
+      <p class="proj-url">maurerlab.org</p>
+      <div class="proj-divider"></div>
+      <p class="proj-desc">The Maurer Lab at University of Michigan researches recombinant AAV gene delivery vectors. We built a site balancing scientific rigor with warmth — a bold full-bleed hero, fluid layouts for research and people pages, and a live news feed.</p>
+      <div class="skills">
+        <span class="skill">WordPress</span>
+        <span class="skill">Elementor</span>
+        <span class="skill">UX Strategy</span>
+        <span class="skill">Lab Branding</span>
+        <span class="skill">Recruitment Pages</span>
+        <span class="skill">News CMS</span>
+        <span class="skill">Mobile-First</span>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="stat-n">5</div><div class="stat-l">Pages from scratch</div></div>
+        <div class="stat"><div class="stat-n">100%</div><div class="stat-l">Fully responsive</div></div>
+      </div>
+      <a href="https://maurerlab.org" target="_blank" class="proj-cta">
+        <span>View Live Site</span>
+        <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12L12 2M12 2H5M12 2V9"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- 02 DynaPore -->
+  <div class="project">
+    <div class="project-num">02</div>
+    <div class="slider-col">
+      <div class="slider-viewport">
+        <div class="slider-track" id="dt">
+          <div class="slide">
+            <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fdynaporetech.com?w=800&h=500" alt="DynaPore hero">
+            <div class="slide-label">Homepage Hero</div>
+          </div>
+          <div class="slide-live">
+            <div class="dp-live-hero">
+              <div class="dp-canvas-wrap"><canvas id="dp-canvas"></canvas></div>
+              <div class="dp-hud">
+                <div class="dp-chip">10 mV</div>
+                <div class="dp-pulse"></div>
+                <div class="dp-output">
+                  <div class="dp-output-label">Sample Output</div>
+                  <div class="dp-output-val"><span id="dp-cur-val">0.012</span><span class="dp-output-unit">nA</span></div>
+                </div>
+                <div class="dp-ch">CH_01 · DISPLAY</div>
+              </div>
+              <div class="dp-caption-bar">
+                <div class="dp-caption-left">
+                  <p>Stable Ion-Channel Platform</p>
+                  <h3>Simple, stable membrane platform <em>for ion channels.</em></h3>
+                </div>
+                <div class="dp-stats">
+                  <div class="dp-stat"><div class="dp-stat-val">1 nM</div><div class="dp-stat-lbl">Detection</div></div>
+                  <div class="dp-stat-div"></div>
+                  <div class="dp-stat"><div class="dp-stat-val">pA</div><div class="dp-stat-lbl">Resolution</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="slide-label" style="position:absolute;bottom:64px;left:20px;">Live Ion-Channel Viz</div>
+          </div>
+          <div class="slide">
+            <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fdynaporetech.com%2F%23ecosystem?w=800&h=500" alt="DynaPore ecosystem">
+            <div class="slide-label">Ecosystem &amp; Backing</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-ui">
+        <button class="s-btn" onclick="go('d',-1)">
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8,1 3,6 8,11"/></svg>
+        </button>
+        <div class="s-dots" id="dd">
+          <div class="s-dot active" onclick="gt('d',0)"></div>
+          <div class="s-dot"        onclick="gt('d',1)"></div>
+          <div class="s-dot"        onclick="gt('d',2)"></div>
+        </div>
+        <button class="s-btn" onclick="go('d',1)">
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4,1 9,6 4,11"/></svg>
+        </button>
+        <div class="s-count"><em id="dc">1</em>/3</div>
+      </div>
+    </div>
+    <div class="content-col">
+      <p class="proj-tag">Deep Tech &amp; Biotech</p>
+      <h3 class="proj-title">DynaPore<br>Tech</h3>
+      <p class="proj-url">dynaporetech.com</p>
+      <div class="proj-divider"></div>
+      <p class="proj-desc">DynaPore is a German deep-tech startup pioneering membrane platforms for ion channel measurement. We designed a dark, bold presence — live electrophysiology signal charts, structured institutional credibility, and sharp investor positioning built in Wix Studio.</p>
+      <div class="skills">
+        <span class="skill">Wix Studio</span>
+        <span class="skill">Dark Theme</span>
+        <span class="skill">Startup Branding</span>
+        <span class="skill">Investor Positioning</span>
+        <span class="skill">Data Visualization</span>
+        <span class="skill">Events CMS</span>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="stat-n">6+</div><div class="stat-l">Institutional partners</div></div>
+        <div class="stat"><div class="stat-n">DE</div><div class="stat-l">European tech market</div></div>
+      </div>
+      <a href="https://dynaporetech.com" target="_blank" class="proj-cta">
+        <span>View Live Site</span>
+        <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12L12 2M12 2H5M12 2V9"/></svg>
+      </a>
+    </div>
+  </div>
+
+</div><!-- /projects -->

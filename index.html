@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glyde Media</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Barlow:wght@300;400;500&family=DM+Mono:wght@300;400&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+  <!-- Global styles — always load first -->
+  <link rel="stylesheet" href="assets/css/global.css">
+
+  <!-- Section styles — add each as you build -->
+  <link rel="stylesheet" href="assets/css/intro.css">
+  <link rel="stylesheet" href="assets/css/about-glyde.css">
+  <link rel="stylesheet" href="assets/css/services.css">
+  <link rel="stylesheet" href="assets/css/video-portfolio.css">
+  <link rel="stylesheet" href="assets/css/logo-ticker.css">
+  <link rel="stylesheet" href="assets/css/about-mark.css">
+  <link rel="stylesheet" href="assets/css/web-portfolio-hero.css">
+  <link rel="stylesheet" href="assets/css/web-portfolio.css">
+  <link rel="stylesheet" href="assets/css/cta.css">
+  <link rel="stylesheet" href="assets/css/testimonials.css">
+  <link rel="stylesheet" href="assets/css/cta-final.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <!-- future: header.css, intro.css, about-glyde.css, about-mark.css, video-portfolio.css, location.css, footer.css -->
+</head>
+<body>
+
+
+  <!-- ============================================================
+       1. HEADER / NAV
+       File: assets/sections/header.html
+       CSS:  assets/css/header.css
+       Status: 🔲 Not built
+  ============================================================ -->
+  <header class="site-header" id="siteHeader">
+    <a class="header-logo" href="#">
+      <img src="assets/img/glydemediajpg.jpg" alt="Glyde Media">
+    </a>
+    <nav class="header-nav">
+      <a class="nav-link" href="#reel">Reel</a>
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#video">Video</a>
+      <a class="nav-link" href="#web">Web Design</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- ============================================================
+       2. INTRO HERO
+       File: assets/sections/intro.html
+       CSS:  assets/css/intro.css
+       Status: 🔲 Not built
+  ============================================================ -->
+  <section class="intro" id="reel">
+    <div class="video-bg">
+      <iframe
+        src="https://www.youtube.com/embed/WnKNy1Zv10o?autoplay=1&mute=1&loop=1&playlist=WnKNy1Zv10o&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&disablekb=1"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="video-overlay"></div>
+    <div class="intro-content">
+      <div class="intro-tagline">
+        <div class="t1-wrap"><span class="t1">Your Vision.</span></div>
+        <div class="tagline-sep"></div>
+        <div class="t2-wrap"><span class="t2">Our Passion.</span></div>
+      </div>
+      <a href="https://www.youtube.com/watch?v=WnKNy1Zv10o" target="_blank" class="intro-btn">
+        <div class="btn-ring">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="btn-label">
+          <span>Watch Our Reel</span>
+          <span>Full screen on YouTube</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       3. GET TO KNOW GLYDE
+       File: assets/sections/about-glyde.html
+       CSS:  assets/css/about-glyde.css
+       Status: 🔲 Not built
+  ============================================================ -->
+  <section class="about-glyde">
+    <div class="about-inner">
+
+      <h2 class="about-headline">
+        <span class="l1">Glyde </span><span class="l2">With Us</span>
+      </h2>
+
+      <div class="about-divider"></div>
+
+      <p class="about-body">
+        We're <strong>Glyde Media</strong> — a PNW based video production company that creates <strong>cinematic videos for local businesses and non-profits</strong>, and has traveled the world working with global brands.
+      </p>
+      <p class="about-body">
+        We've worked on a range of productions including commercials, fundraising content, custom music, podcasts, website development, and documentaries.
+      </p>
+
+      <div class="about-quote">
+        <p>Let's create something <em>awesome</em> together.</p>
+      </div>
+
+      <div class="about-location">
+        <div class="loc-dot"></div>
+        <span class="loc-city">Bend, OR</span>
+        <div class="loc-dot"></div>
+        <span class="loc-city">Portland, OR</span>
+        <div class="loc-dot"></div>
+        <span class="loc-city">Bellingham, WA</span>
+        <div class="loc-dot"></div>
+        <span class="loc-city">Seattle, WA</span>
+        <div class="loc-dot"></div>
+      </div>
+      <p class="about-travel">Ready to travel worldwide</p>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- ============================================================
+       3b. SERVICES
+       File: assets/sections/services.html
+       CSS:  assets/css/services.css
+       Status: ✅ Built
+  ============================================================ -->
+  <section class="services" id="services">
+    <div class="services-inner">
+      <div class="services-header">
+        <p class="services-eyebrow">What We Enjoy</p>
+        <h2 class="services-headline">
+          <span class="solid">Our</span>
+          <span class="stroke">Services</span>
+        </h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <span class="service-num">01</span>
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><path d="M9 12h6M9 16h4"/></svg></div>
+          <p class="service-name">Pre-Production</p>
+          <p class="service-desc">Our team comes with stellar concepts, methodology, and collaboration to every project, setting all players up for success from the start.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">02</span>
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 10l4.553-2.069A1 1 0 0121 8.82v6.36a1 1 0 01-1.447.889L15 14M3 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg></div>
+          <p class="service-name">Cinematic Production</p>
+          <p class="service-desc">Our video shoots combine cinematic creative direction, skilled videographers, top-notch technologies, and the perfect talent for every project.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">03</span>
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+          <p class="service-name">Music</p>
+          <p class="service-desc">Bring emotion and dynamic energy to your video content with custom created music to match the mood, pace and feeling of your story.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">04</span>
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.752 11.168l-3.197-2.132A1 1 0 0010 10v4a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <p class="service-name">Post-Production</p>
+          <p class="service-desc">Our team works closely with yours on feedback in order to create the perfect finished product that creates an authentic response in your audience.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">05</span>
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+          <p class="service-name">Website Design</p>
+          <p class="service-desc">Need more than visual content? We also have experience building gorgeous websites for our clients.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">06</span>
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/><path d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/></svg></div>
+          <p class="service-name">Marketing Strategy</p>
+          <p class="service-desc">We don't just provide you with your video and send you on your way. We design tailor made video marketing strategies to ensure you get full value from your media.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       4. GET TO KNOW MARK
+       File: assets/sections/about-mark.html
+       CSS:  assets/css/about-mark.css
+       Status: 🔲 Not built
+  ============================================================ -->
+  <section class="about-mark" id="about">
+    <div class="mark-inner">
+
+      <div class="mark-photo-wrap">
+        <div class="mark-photo-ring">
+          <div class="mark-photo-glow"></div>
+          <img class="mark-photo" src="assets/img/ml-headshot.png" alt="Mark Leckband">
+        </div>
+        <div class="mark-badge">Founder &nbsp;·&nbsp; Director of Photography</div>
+      </div>
+
+      <div class="mark-content">
+        <h2 class="mark-headline">
+          <span class="h1">Hello,</span>
+          <span class="h2">I'm Mark.</span>
+        </h2>
+        <div class="mark-divider"></div>
+        <p class="mark-body">
+          I'm driven by the power of stories and images to <strong>inspire, connect, and transform.</strong> I thrive on seeing people's purpose come alive through their passion.
+        </p>
+        <p class="mark-body">
+          From lighting interviews, to capturing epic shots, to finding the driving story arc, I love how each project is unique.
+        </p>
+        <p class="mark-body">
+          <strong>Let's connect on what you are passionate about!</strong>
+        </p>
+        <a href="/cdn-cgi/l/email-protection#167b77647d56717a6f72737b73727f773875797b" class="mark-cta">
+          <span>Let's Connect</span>
+          <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12L12 2M12 2H5M12 2V9"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       5. VIDEO PORTFOLIO
+       File: assets/sections/video-portfolio.html
+       CSS:  assets/css/video-portfolio.css
+       JS:   assets/js/video-portfolio.js
+       Status: 🔲 Not built
+  ============================================================ -->
+  <section class="vid-portfolio" id="video">
+    <div class="vid-header">
+      <p class="vid-eyebrow">Our Work</p>
+      <h2 class="vid-headline"><span class="solid">Video </span><span class="stroke">Portfolio</span></h2>
+    </div>
+    <div class="vid-grid">
+
+      <a class="vid-item item-luft" href="https://vimeo.com/224714930" target="_blank">
+        <img src="assets/img/BW-luft2.jpg" alt="Lufthansa Airlines">
+        <div class="vid-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+        <div class="vid-overlay">
+          <p class="vid-title">Lufthansa Airlines</p>
+          <p class="vid-desc">Snapchat Ad — San Jose<em>Footage, Editing &amp; Music by Glyde Media · Agency: Sparkloft Media</em></p>
+        </div>
+      </a>
+
+      <a class="vid-item item-smith" href="https://www.youtube.com/watch?v=bYUFxpDGM2c" target="_blank">
+        <img src="assets/img/BW-smith.jpg" alt="Smith Rock">
+        <div class="vid-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+        <div class="vid-overlay">
+          <p class="vid-title">Smith Rock Scenes</p>
+          <p class="vid-desc">Footage, editing and music by Glyde Media</p>
+        </div>
+      </a>
+
+      <a class="vid-item item-brit" href="https://www.youtube.com/watch?v=BUcpmxU5h3A" target="_blank">
+        <img src="assets/img/BW-brit2.png" alt="Portland Running">
+        <div class="vid-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+        <div class="vid-overlay">
+          <p class="vid-title">Portland Running</p>
+          <p class="vid-desc">Footage and editing by Glyde Media</p>
+        </div>
+      </a>
+
+      <a class="vid-item item-brian" href="https://www.youtube.com/watch?v=G3BKQCSC4EA" target="_blank">
+        <img src="assets/img/BW-brian-grant.png" alt="Brian Grant Foundation">
+        <div class="vid-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+        <div class="vid-overlay">
+          <p class="vid-title">Brian Grant Foundation</p>
+          <p class="vid-desc">Charity Basketball Event</p>
+        </div>
+      </a>
+
+      <a class="vid-item item-crystal" href="https://www.youtube.com/watch?v=Hbjq_qbjVxE" target="_blank">
+        <img src="assets/img/BW-crystal.png" alt="Crystal Cruises">
+        <div class="vid-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+        <div class="vid-overlay">
+          <p class="vid-title">Crystal Cruises</p>
+          <p class="vid-desc">Employee Recruitment Ad<em>Footage by Glyde Media · Agency: Sparkloft Media</em></p>
+        </div>
+      </a>
+
+      <a class="vid-item item-embryn" href="https://www.youtube.com/watch?v=4-EjNWJ2lXM" target="_blank">
+        <img src="assets/img/BW-embryn.jpg" alt="Arbor Builders">
+        <div class="vid-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+        <div class="vid-overlay">
+          <p class="vid-title">Arbor Builders</p>
+          <p class="vid-desc">Footage, editing, and music by Glyde Media</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       6. WEB DESIGN PORTFOLIO
+       File: assets/sections/web-portfolio.html
+       CSS:  assets/css/web-portfolio-hero.css + web-portfolio.css
+       JS:   assets/js/web-portfolio.js
+       Status: ✅ Built
+  ============================================================ -->
+
+  <section class="logo-ticker">
+    <div class="ticker-header">
+      <p class="ticker-eyebrow">Our Clients</p>
+      <h2 class="ticker-headline">
+        <span class="solid">Amazing Organizations</span>
+        <span class="stroke">We've Worked With</span>
+      </h2>
+    </div>
+    <div class="ticker-wrapper">
+      <div class="ticker-track" id="tickerTrack">
+        <div class="ticker-item"><img src="assets/img/girl-scout-logo.jpg" alt="Girl Scouts"></div>
+        <div class="ticker-item"><img src="assets/img/png-transparent-logo-lufthansa-brand-product-design-yellow-special-date-text-computer-logo.png" alt="Lufthansa"></div>
+        <div class="ticker-item"><img src="assets/img/png-clipart-logo-alamo-rent-a-car-car-rental-car-text-rectangle-thumbnail.png" alt="Alamo" style="max-height:120px;max-width:320px;"></div>
+        <div class="ticker-item"><img src="assets/img/meet-puerto-rico.jpeg" alt="Meet Puerto Rico" style="max-height:110px;max-width:260px;"></div>
+        <div class="ticker-item"><img src="assets/img/images.png" alt="Visit The USA"></div>
+        <div class="ticker-item"><img src="assets/img/logo.png" alt="Human Trafficking In Our Backyard"></div>
+        <div class="ticker-item"><img src="assets/img/logo.webp" alt="Sparkloft Media" class="dark-bg"></div>
+        <div class="ticker-item"><img src="assets/img/harmless-harvest-logo.png" alt="Harmless Harvest" style="max-height:90px;max-width:260px;"></div>
+        <div class="ticker-item"><img src="assets/img/crystal-cruises.jpeg" alt="Crystal Cruises" style="max-height:120px;max-width:280px;"></div>
+        <div class="ticker-item"><img src="assets/img/orglogo.png" alt="Brian Grant Foundation" style="max-height:120px;max-width:280px;"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Web Portfolio Hero -->
+  <div class="hero-graphic" id="web">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Selected Work</p>
+      <div class="hero-title-row">
+        <div>
+          <h2 class="hero-title">
+            <span class="solid">WEB</span>
+            <span class="stroke">DESIGN</span>
+          </h2>
+          <div class="hero-divider"></div>
+          <p class="hero-sub">Clean, dynamic websites<br>for researchers, startups &amp; businesses.</p>
+        </div>
+        <div class="logo-spin-wrap">
+          <div class="logo-glow-ring"></div>
+          <div class="orbit-ring-1"></div>
+          <div class="orbit-ring-2"></div>
+          <img class="logo-img" src="assets/img/iconpng.png" alt="Glyde Media">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects">
+
+    <!-- 01 Maurer Lab -->
+    <div class="project">
+      <div class="slider-col">
+        <div class="screenshot-window">
+          <div class="slider-track" id="mt">
+            <div class="slide"><img src="assets/img/maurer-hero.png" alt="Homepage Hero"></div>
+            <div class="slide"><img src="assets/img/maurer-lab.png" alt="Lab Space"></div>
+            <div class="slide"><img src="assets/img/maurer-news.png" alt="Lab News"></div>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <button class="s-btn" onclick="go('m',-1)">
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8,1 3,6 8,11"/></svg>
+          </button>
+          <div class="s-dots" id="md">
+            <div class="s-dot active" onclick="gt('m',0)"></div>
+            <div class="s-dot" onclick="gt('m',1)"></div>
+            <div class="s-dot" onclick="gt('m',2)"></div>
+          </div>
+          <button class="s-btn" onclick="go('m',1)">
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4,1 9,6 4,11"/></svg>
+          </button>
+          <div class="s-count"><em id="mc">1</em>/3</div>
+        </div>
+      </div>
+      <div class="content-col">
+        <p class="proj-tag">Academic Research</p>
+        <h3 class="proj-title">Maurer<br>Lab</h3>
+        <p class="proj-url">maurerlab.org</p>
+        <div class="proj-divider"></div>
+        <p class="proj-desc">The Maurer Lab at University of Michigan researches recombinant AAV gene delivery vectors. Dr. Maurer wanted something far from your typical lab website — bold synthwave tones designed to stand out and help recruit a passionate team.</p>
+        <div class="skills">
+          <span class="skill">WordPress</span>
+          <span class="skill">Elementor</span>
+          <span class="skill">UX Strategy</span>
+          <span class="skill">Lab Branding</span>
+          <span class="skill">Mobile-First</span>
+        </div>
+        <a href="https://maurerlab.org" target="_blank" class="proj-cta">
+          <span>View Live Site</span>
+          <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12L12 2M12 2H5M12 2V9"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- 02 DynaPore -->
+    <div class="project">
+      <div class="slider-col">
+        <div class="screenshot-window">
+          <div class="slider-track" id="dt">
+            <div class="slide"><img src="assets/img/dynapore-hero.png" alt="DynaPore Hero"></div>
+            <div class="slide"><img src="assets/img/dynapore-ecosystem.png" alt="DynaPore Ecosystem"></div>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <button class="s-btn" onclick="go('d',-1)">
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8,1 3,6 8,11"/></svg>
+          </button>
+          <div class="s-dots" id="dd">
+            <div class="s-dot active" onclick="gt('d',0)"></div>
+            <div class="s-dot" onclick="gt('d',1)"></div>
+          </div>
+          <button class="s-btn" onclick="go('d',1)">
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4,1 9,6 4,11"/></svg>
+          </button>
+          <div class="s-count"><em id="dc">1</em>/2</div>
+        </div>
+      </div>
+      <div class="content-col">
+        <p class="proj-tag">Deep Tech &amp; Biotech</p>
+        <h3 class="proj-title">DynaPore<br>Tech</h3>
+        <p class="proj-url">dynaporetech.com</p>
+        <div class="proj-divider"></div>
+        <p class="proj-desc">DynaPore is a German deep-tech startup pioneering membrane platforms for ion channel measurement. We designed a dark, bold presence — live electrophysiology signal charts, structured institutional credibility, and sharp investor positioning built in Wix Studio.</p>
+        <div class="skills">
+          <span class="skill">Wix Studio</span>
+          <span class="skill">Dark Theme</span>
+          <span class="skill">Startup Branding</span>
+          <span class="skill">Data Visualization</span>
+        </div>
+        <a href="https://dynaporetech.com" target="_blank" class="proj-cta">
+          <span>View Live Site</span>
+          <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12L12 2M12 2H5M12 2V9"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div><!-- /projects -->
+
+
+  <!-- ============================================================
+       7. CLIENT TESTIMONIALS
+       CSS:  assets/css/testimonials.css
+       Status: ✅ Built
+  ============================================================ -->
+  <section class="testimonials">
+    <div class="testimonials-header">
+      <p class="testimonials-eyebrow">Kind Words</p>
+      <h2 class="testimonials-headline">
+        <span class="solid">What Our</span><br>
+        <span class="stroke">Clients Say</span>
+      </h2>
+    </div>
+
+    <div class="testimonials-viewport">
+      <div class="testimonials-track" id="tTrack">
+
+        <!-- 1 — Steph Haas -->
+        <div class="testimonial-card">
+          <div class="card-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="card-quote">My non-profit organization was honored to have Mark working alongside us to create a beautiful video which precisely demonstrates what our program, Portland Tennis &amp; Education, is all about. Even after completing the video, Mark continued to edit and rearrange to best fit our needs. I strongly recommend Glyde Media!</p>
+          <div class="card-author">
+            <div>
+              <p class="card-name">Steph Haas</p>
+              <p class="card-role">Portland Tennis &amp; Education</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 — Fitz Paccione -->
+        <div class="testimonial-card">
+          <div class="card-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="card-quote">Mark and the team at Glyde Media do an amazing job. The quality of their work and commitment to their client was unparalleled. I have interacted with a lot of media production companies over my career — and they are truly best in class!</p>
+          <div class="card-author">
+            <div>
+              <p class="card-name">Fitz Paccione</p>
+              <p class="card-role">Nike</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 — Nicole Nelson -->
+        <div class="testimonial-card">
+          <div class="card-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="card-quote">I worked with Mark on a shoot all the way in Rüdesheim, Germany — video, photo, and drone work. Mark was a pro at turning everything around quickly while creating genuinely great content that our client was excited to share. Definitely recommend Glyde Media!</p>
+          <div class="card-author">
+            <div>
+              <p class="card-name">Nicole Nelson</p>
+              <p class="card-role">International Production Client</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 — Mathew Robinson -->
+        <div class="testimonial-card">
+          <div class="card-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="card-quote">Mark and his team made a promo video for a real estate team that my business partner and I run. They are very professional and use cutting-edge gear and technology to make some very impressive and creative videos!</p>
+          <div class="card-author">
+            <div>
+              <p class="card-name">Mathew Robinson</p>
+              <p class="card-role">Real Estate Client</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 — Christine Nguyen -->
+        <div class="testimonial-card">
+          <div class="card-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="card-quote">I really enjoyed working with Rebecca and Mark. This was one of the most memorable experiences for me as a model. The crew was well structured and fun, and I was impressed by the talent of everyone involved. I hope to work with them again!</p>
+          <div class="card-author">
+            <div>
+              <p class="card-name">Christine Nguyen</p>
+              <p class="card-role">Model &amp; Creative Collaborator</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /testimonials-track -->
+    </div><!-- /testimonials-viewport -->
+
+    <div class="testimonials-nav">
+      <button class="t-btn" id="tPrev" aria-label="Previous">
+        <svg viewBox="0 0 12 12" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8,1 3,6 8,11"/></svg>
+      </button>
+      <button class="t-btn" id="tNext" aria-label="Next">
+        <svg viewBox="0 0 12 12" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4,1 9,6 4,11"/></svg>
+      </button>
+      <div class="t-dots" id="tDots">
+        <button class="t-dot active"></button>
+        <button class="t-dot"></button>
+        <button class="t-dot"></button>
+        <button class="t-dot"></button>
+      </div>
+      <span class="t-count"><em id="tCur">1</em>&thinsp;/&thinsp;4</span>
+    </div>
+
+  </section>
+
+  <script>
+  (function () {
+    var track   = document.getElementById('tTrack');
+    var prevBtn = document.getElementById('tPrev');
+    var nextBtn = document.getElementById('tNext');
+    var dots    = document.querySelectorAll('.t-dot');
+    var curEl   = document.getElementById('tCur');
+    var perView = window.innerWidth <= 900 ? 1 : 2;
+    var total   = track.children.length;
+    var pages   = total - perView + 1;
+    var cur     = 0;
+    function update() {
+      var cardW = track.children[0].offsetWidth;
+      var gap   = 24;
+      track.style.transform = 'translateX(-' + (cur * (cardW + gap)) + 'px)';
+      dots.forEach(function (d, i) { d.classList.toggle('active', i === cur); });
+      curEl.textContent = cur + 1;
+      prevBtn.disabled = cur === 0;
+      nextBtn.disabled = cur >= pages - 1;
+    }
+    prevBtn.addEventListener('click', function () { if (cur > 0) { cur--; update(); } });
+    nextBtn.addEventListener('click', function () { if (cur < pages - 1) { cur++; update(); } });
+    dots.forEach(function (d, i) { d.addEventListener('click', function () { cur = i; update(); }); });
+    window.addEventListener('resize', function () {
+      perView = window.innerWidth <= 900 ? 1 : 2;
+      pages   = total - perView + 1;
+      cur     = Math.min(cur, pages - 1);
+      update();
+    });
+    update();
+  })();
+  </script>
+
+
+  <!-- ============================================================
+       7. CALL TO ACTION
+       CSS:  assets/css/cta-final.css
+       Status: ✅ Built
+  ============================================================ -->
+  <section class="cta-final" id="contact">
+    <p class="cta-final-eyebrow">Let's work together</p>
+    <h2 class="cta-final-headline">
+      <span class="solid">Your vision.</span><br>
+      <span class="stroke">Fully realized.</span>
+    </h2>
+    <p class="cta-final-body">Whether you need a <strong>cinematic quality film</strong>, a <strong>website that converts</strong>, or a <strong>full creative campaign</strong> from concept to launch — we've built it before, and we'll bring that same passion to your project.</p>
+    <a class="cta-final-btn" href="mailto:mark@glydemedia.com">
+      <span>Start a Conversation</span>
+      <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12L12 2M12 2H5M12 2V9"/></svg>
+    </a>
+    <p class="cta-final-loc">PNW based <span>·</span> Worldwide ready</p>
+  </section>
+
+
+  <!-- ============================================================
+       8. LOCATION & DETAILS
+       File: assets/sections/location.html
+       CSS:  assets/css/location.css
+       Status: 🔲 Not built
+  ============================================================ -->
+  <!-- location goes here -->
+
+
+  <!-- ============================================================
+       9. FOOTER
+       File: assets/sections/footer.html
+       CSS:  assets/css/footer.css
+       Status: 🔲 Not built
+  ============================================================ -->
+  <!-- footer goes here -->
+
+  <!-- Scripts — one file per section, load at the bottom -->
+  <script>
+  (function(){
+    var hdr = document.getElementById("siteHeader");
+    window.addEventListener("scroll", function(){
+      hdr.classList.toggle("scrolled", window.scrollY > 40);
+    });
+  })();
+  </script>
+  <script src="assets/js/web-portfolio.js"></script>
+  <script>
+  (function(){
+    var track = document.getElementById('tickerTrack');
+    if(!track) return;
+    var items = Array.from(track.children);
+    items.forEach(function(item){ track.appendChild(item.cloneNode(true)); });
+    requestAnimationFrame(function(){
+      var halfWidth = track.scrollWidth / 2;
+      track.style.setProperty('--scroll-width', '-' + halfWidth + 'px');
+      track.style.setProperty('--dur', Math.round(halfWidth / 70) + 's');
+      track.classList.add('animating');
+    });
+  })();
+  </script>
+
+</body>
+</html>

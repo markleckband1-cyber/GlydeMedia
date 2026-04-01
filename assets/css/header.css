@@ -1,0 +1,111 @@
+/* ============================================================
+   GLYDE MEDIA — header.css
+   ============================================================ */
+
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  height: 110px;
+  background: #141d3e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  transition: height 0.4s ease, box-shadow 0.4s ease;
+}
+
+.site-header.scrolled {
+  height: 80px;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* ── Logo ── */
+.header-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.header-logo img {
+  height: 90px;
+  width: auto;
+  transition: height 0.4s ease;
+}
+
+.site-header.scrolled .header-logo img {
+  height: 64px;
+}
+
+/* ── Nav ── */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-link {
+  font-family: var(--cond);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: color 0.2s;
+  white-space: nowrap;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0; right: 0;
+  height: 1.5px;
+  background: var(--teal);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.nav-link:hover { color: #fff; }
+.nav-link:hover::after { transform: scaleX(1); }
+
+/* ── Contact CTA ── */
+.nav-cta {
+  font-family: var(--cond);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #141d3e;
+  background: var(--teal);
+  text-decoration: none;
+  padding: 11px 24px;
+  margin-left: 8px;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav-cta:hover { background: #2da88d; }
+
+/* ── Smooth scroll ── */
+html { scroll-behavior: smooth; }
+
+section[id], div[id] {
+  scroll-margin-top: 110px;
+}
+
+/* ── Mobile ── */
+@media (max-width: 860px) {
+  .site-header { padding: 0 24px; }
+  .header-nav { gap: 20px; }
+  .nav-link { font-size: 10px; }
+}
+
+@media (max-width: 640px) {
+  .header-nav .nav-link { display: none; }
+  .nav-cta { margin-left: 0; display: flex; }
+}

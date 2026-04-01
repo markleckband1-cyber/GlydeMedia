@@ -1,0 +1,28 @@
+/* ============================================================
+   GLYDE MEDIA — global.css
+   Shared variables, reset, and body styles.
+   Every other CSS file depends on these variables.
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:   #141D3E;
+  --navy2:  #0E1526;
+  --teal:   #3DBDA0;
+  --teal2:  #2EA88C;
+  --teal-g: rgba(61,189,160,0.15);
+  --white:  #FFFFFF;
+  --muted:  rgba(255,255,255,0.45);
+  --border: rgba(61,189,160,0.18);
+  --cond:   'Raleway', sans-serif;
+  --sans:   'Barlow', sans-serif;
+}
+
+body {
+  font-family: var(--sans);
+  background: var(--navy);
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}

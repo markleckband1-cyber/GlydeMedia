@@ -1,0 +1,74 @@
+/* ============================================================
+   GLYDE MEDIA — cta-final.css
+   Styles for the closing Call to Action section
+   ============================================================ */
+
+.cta-final {
+  background: var(--navy);
+  padding: 100px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cta-final-eyebrow {
+  font-family: var(--cond); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.26em; text-transform: uppercase;
+  color: var(--teal);
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 20px;
+}
+.cta-final-eyebrow::before,
+.cta-final-eyebrow::after {
+  content: ''; width: 24px; height: 2px;
+  background: var(--teal); flex-shrink: 0;
+}
+
+.cta-final-headline {
+  font-family: var(--cond);
+  font-size: clamp(42px, 6vw, 80px);
+  font-weight: 900; text-transform: uppercase;
+  letter-spacing: -0.02em; line-height: 0.92;
+  margin-bottom: 28px;
+}
+.cta-final-headline .solid { color: var(--white); }
+.cta-final-headline .stroke {
+  -webkit-text-stroke: 2px var(--teal);
+  color: transparent;
+}
+
+.cta-final-body {
+  font-family: var(--sans);
+  font-size: 16px; font-weight: 300;
+  color: rgba(255,255,255,0.55);
+  max-width: 580px; line-height: 1.8;
+  margin-bottom: 48px;
+}
+.cta-final-body strong {
+  color: rgba(255,255,255,0.85);
+  font-weight: 600;
+}
+
+.cta-final-btn {
+  display: inline-flex; align-items: center; gap: 12px;
+  background: var(--teal); color: var(--navy);
+  font-family: var(--cond); font-size: 12px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  padding: 18px 40px; text-decoration: none;
+  transition: background 0.2s ease;
+}
+.cta-final-btn:hover { background: #2da88d; }
+.cta-final-btn svg { stroke: var(--navy); flex-shrink: 0; }
+
+.cta-final-loc {
+  margin-top: 32px;
+  font-family: var(--sans); font-size: 11px; font-weight: 400;
+  color: rgba(255,255,255,0.25);
+  letter-spacing: 0.12em; text-transform: uppercase;
+}
+.cta-final-loc span { color: rgba(61,189,160,0.5); }
+
+@media (max-width: 600px) {
+  .cta-final { padding: 72px 32px; }
+}
