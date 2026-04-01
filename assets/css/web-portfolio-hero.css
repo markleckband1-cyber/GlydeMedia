@@ -69,17 +69,7 @@
   display: flex;
   align-items: center;
 }
-.hero-graphic::before {
-  content: '';
-  position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(61,189,160,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(61,189,160,0.04) 1px, transparent 1px);
-  background-size: 48px 48px;
-  pointer-events: none; z-index: 0;
-  animation: gridShift 25s linear infinite;
-}
-@keyframes gridShift { to { background-position: 48px 48px; } }
+.hero-graphic::before { display: none; }
 
 .hero-left {
   position: relative; z-index: 2;
