@@ -195,11 +195,34 @@
   clip-path: inset(0);
 }
 
+/* ── Tablet ── */
 @media (max-width: 900px) {
-  .hero-graphic   { height: auto; min-height: 460px; }
-  .hero-left      { padding: 60px 32px 48px; }
-  .hero-title-row { gap: 20px; }
-  .logo-spin-wrap { width: 140px; height: 140px; margin-right: 20px; }
+  .hero-graphic { height: auto; }
+  .hero-left { padding: 48px 32px; }
+  .logo-spin-wrap { width: 180px; height: 180px; margin-right: 24px; }
+}
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  .hero-graphic { height: auto; }
+  .hero-left { padding: 48px 24px 40px; }
+  /* Stack text above, logo below */
+  .hero-title-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-title { font-size: clamp(52px, 14vw, 72px); }
+  .hero-eyebrow { font-size: 10px; }
+  .hero-sub {
+    font-size: 13px;
+    max-width: 100%;
+    letter-spacing: 0.08em;
+  }
+  /* Logo centers below text */
+  .logo-spin-wrap {
+    width: 180px; height: 180px;
+    margin: 32px auto 0;
+  }
 }
 
 .orbit-ring-3 {
